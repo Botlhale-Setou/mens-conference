@@ -1,0 +1,167 @@
+/* Reset___________________________________ */
+* {
+	margin: 0;
+	padding: 0;
+	/* Variables_____________________________ */
+	--color-primary: #272a31;
+	--color-secondary: #ec5242;
+	--color-tertiary: #d3d3d3;
+	font-family: 'Lato', sans-serif;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+/* Global__________________________________ */
+#navbar {
+	width: 100vw;
+  height: 50px;
+	display: flex;
+	align-items: center;
+}
+
+#hero {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+#bg {
+	opacity: 20%;
+	position: absolute;
+	z-index: -1;
+}
+
+#bg2 {
+	position: absolute;
+	z-index: -1;
+	height: 110px;
+	width: 100vw;
+	object-fit: cover;
+	opacity: 6%;
+}
+
+#address {
+	margin: 20px 5vw 0 5vw;
+	color: #272a31;
+}
+
+#program-sec {
+  position: absolute;
+  border: 1px solid red;
+	top: 450px;
+	margin-top: 40px;
+	width: 100vw;
+	background-image: url('./artwork/images/wood.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#program-sec-title {
+	color: white;
+  margin-top: 20px;
+	font-weight: 400;
+	font-size: 25px;
+}
+
+#program-line {
+	width: 5vw;
+	margin-top: 8px;
+	color: var(--color-secondary);
+	background-color: var(--color-secondary);
+	margin-bottom: 20px;
+}
+
+.program {
+	display: flex;
+	align-items: center;
+	margin: 0 5vw 10px 5vw;
+	background-color: rgb(255, 255, 255, 0.2);
+	padding: 10px;
+	justify-content: space-between;
+	width: 90vw;
+}
+
+.program-logo {
+	width: 70px;
+}
+
+.program-title {
+	color: var(--color-secondary);
+	font-size: 18px;
+}
+
+.program-desc {
+	color: white;
+}
+
+#joinbtn {
+	background-color: var(--color-secondary);
+	color: white;
+	border: none;
+	width: 75vw;
+	height: 60px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+#title-small {
+	margin-top: 100px;
+	margin-left: 5vw;
+	color: var(--color-secondary);
+	font-weight: 100;
+	font-size: 28px;
+}
+
+#title {
+	margin-left: 5vw;
+	font-size: 35px;
+	font-weight: 800;
+	line-height: 33px;
+	background-image: url('./artwork/images/txtbg.webp');
+	background-size: 80vw;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+#intro {
+	border: 3px solid rgb(255, 255, 255);
+	margin: 20px 5vw 0 5vw;
+	padding: 20px;
+	background-color: #d3d3d3;
+}
+
+#date {
+	margin: 20px 5vw 0 5vw;
+	font-weight: 800;
+	font-size: 30px;
+	color: rgb(88, 88, 88);
+}
+/* Mobile___________________________________ */
+@media only screen and (max-width: 768px) {
+  #navbar {
+		padding-top: 7px;
+	}
+
+	#burger-ph {
+		margin-left: 25px;
+	}
+	
+	.bar {
+		width: 40px;
+		height: 6px;
+		background-color: var(--color-primary);
+		transition-duration: 300ms;
+		margin-bottom: 7px;
+	}
+}
+
+/* Desktop___________________________________ */
+@media only screen and (min-width: 768px) {
+	
+}

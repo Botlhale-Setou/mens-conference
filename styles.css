@@ -49,7 +49,6 @@ html {
 
 #program-sec {
   position: absolute;
-  border: 1px solid red;
 	top: 450px;
 	margin-top: 40px;
 	width: 100vw;
@@ -107,6 +106,109 @@ html {
 	height: 60px;
 	margin-top: 20px;
 	margin-bottom: 40px;
+	font-size: 22px;
+	font-weight: 100;
+}
+
+#speaker-sec {
+	position: absolute;
+	border: 1px solid red;
+	top: 1188px;
+	width: 100vw;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+}
+
+#speaker-sec-title {
+	margin-top: 30px;
+	font-size: 22px;
+}
+
+#speaker-hr {
+	width: 8vw;
+	background-color: var(--color-secondary);
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.speaker {
+	margin: 0 5vw 40px 5vw;
+	display: flex;
+	align-items: center;
+	background-image: url('./artwork/images/transparent.webp');
+	background-size: 70px;
+	background-repeat: no-repeat;
+}
+
+.speaker-img {
+  margin: 3vw 3vw 0 3vw;
+	aspect-ratio: 1;
+	height: 130px;
+	object-fit: cover;
+}
+
+.speaker-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 130px;
+}
+
+.speaker-name {
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.speaker-job {
+  color: var(--color-secondary);
+	font-style: italic;
+	font-weight: 100;
+	font-size: 16px;
+}
+
+.speaker-info-hr {
+	background-color: #272a31;
+	width: 3vw;
+}
+
+.speaker-desc {
+	font-size: 14px;
+}
+
+#morebtn {
+	width: 90vw;
+	height: 50px;
+	margin-bottom: 50px;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 2px solid lightgrey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+}
+
+.updown {
+	height: 25px;
+}
+
+#up {
+	display: none;
+	width: 13px;
+	height: 12px;
+	transform: translateY(-6px);
+	margin-left: 15px;
+}
+
+#down {
+	margin-left: 10px;
+	transform: translateY(1px);
+}
+
+.more {
+	display: none;
 }
 
 #title-small {

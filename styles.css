@@ -244,6 +244,21 @@ html {
 	font-size: 30px;
 	color: rgb(88, 88, 88);
 }
+
+/* About page___________________________________ */
+.title-smalla {
+	text-align: center;
+}
+
+.titlea {
+	text-align: center;
+	background-color: var(--color-secondary);
+}
+
+.introa {
+	background-color: white;
+}
+
 /* Mobile___________________________________ */
 @media only screen and (max-width: 768px) {
   #navbar {

@@ -1,0 +1,131 @@
+/* Reset___________________________________ */
+* {
+	margin: 0;
+	padding: 0;
+	/* Variables_____________________________ */
+	--color-primary: #272a31;
+	--color-secondary: #ec5242;
+	--color-tertiary: #d3d3d3;
+	font-family: 'Lato', sans-serif;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+/* Global__________________________________ */
+#navbar {
+	width: 100vw;
+  height: 50px;
+	display: flex;
+	align-items: center;
+}
+
+#hero {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+
+#bg {
+	opacity: 10%;
+	position: absolute;
+	z-index: -1;
+}
+
+#title-small {
+	margin-top: 100px;
+	margin-left: 5vw;
+	color: var(--color-secondary);
+	font-weight: 100;
+	font-size: 28px;
+	text-align: center;
+}
+
+#title {
+	margin-left: 5vw;
+	font-size: 35px;
+	font-weight: 800;
+	line-height: 33px;
+	color: var(--color-secondary);
+	text-align: center;
+}
+
+#intro {
+	border: 1px solid rgb(128, 128, 128, 0.6);
+	margin: 20px 5vw 0 5vw;
+	padding: 20px;
+	background-color: white;
+	text-align: center;
+}
+
+#date {
+	margin: 20px 15vw 0 15vw;
+	color: rgb(88, 88, 88);
+	text-align: center;
+}
+
+#address {
+	margin: 0 5vw 0 5vw;
+	color: #272a31;
+	font-weight: bold;
+	text-align: center;
+}
+
+#logo-sec {
+	border: 2px solid red;
+	position: absolute;
+	top: 465px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+}
+
+#logo-sec-title {
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+#logo-sec-hr {
+	background-color: var(--color-secondary);
+	width: 7vw;
+	height: 2px;
+	margin-top: 20px;
+}
+
+#logo-sec-desc {
+  text-align: center;
+	margin-top: 20px;
+}
+
+#logo-sec-img {
+	width: 80vw;
+	margin-top: 50px;
+	border: 1px solid rgb(0,0,0,0.3);
+	height: 100px;
+	object-fit: contain;
+	margin-bottom: 40px;
+}
+
+/* Mobile___________________________________ */
+@media only screen and (max-width: 768px) {
+  #navbar {
+		padding-top: 7px;
+	}
+
+	#burger-ph {
+		margin-left: 25px;
+	}
+	
+	.bar {
+		width: 40px;
+		height: 6px;
+		background-color: var(--color-primary);
+		transition-duration: 300ms;
+		margin-bottom: 7px;
+	}
+}

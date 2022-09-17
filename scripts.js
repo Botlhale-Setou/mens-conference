@@ -35,7 +35,7 @@ speakersSec.innerHTML = `
     <p class="speaker-desc">${dataMod.desc[0]}</p>
   </div>
 </article>
-<article class="speaker" id="sp3">
+<article class="speaker more" id="sp3">
   <img src="${dataMod.image[2]}" alt="${dataMod.name[2]}" class="speaker-img">
   <div class="speaker-info">
     <h5 class="speaker-name">${dataMod.name[2]}</h5>
@@ -44,7 +44,7 @@ speakersSec.innerHTML = `
     <p class="speaker-desc">${dataMod.desc[0]}</p>
   </div>
 </article>
-<article class="speaker" id="sp4">
+<article class="speaker more" id="sp4">
   <img src="${dataMod.image[3]}" alt="${dataMod.name[3]}" class="speaker-img">
   <div class="speaker-info">
     <h5 class="speaker-name">${dataMod.name[3]}</h5>
@@ -53,7 +53,7 @@ speakersSec.innerHTML = `
     <p class="speaker-desc">${dataMod.desc[0]}</p>
   </div>
 </article>
-<article class="speaker" id="sp5">
+<article class="speaker more" id="sp5">
   <img src="${dataMod.image[4]}" alt="${dataMod.name[4]}" class="speaker-img">
   <div class="speaker-info">
     <h5 class="speaker-name">${dataMod.name[4]}</h5>
@@ -62,7 +62,7 @@ speakersSec.innerHTML = `
     <p class="speaker-desc">${dataMod.desc[0]}</p>
   </div>
 </article>
-<article class="speaker" id="sp6">
+<article class="speaker more" id="sp6">
   <img src="${dataMod.image[5]}" alt="${dataMod.name[5]}" class="speaker-img">
   <div class="speaker-info">
     <h5 class="speaker-name">${dataMod.name[5]}</h5>

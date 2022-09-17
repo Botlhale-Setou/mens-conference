@@ -21,6 +21,41 @@ html {
 	align-items: center;
 }
 
+#menu {
+	list-style-type: none;
+	width: 100vw;
+	background-color: #091430dc;
+	height: 100vh;
+	position: absolute;
+	top: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	z-index: 3;
+	padding-bottom: 20px;
+	left: -100vw;
+}
+
+.active #bar1 {
+	transform: translateY(14px) rotate(45deg);
+}
+
+.active #bar2 {
+	opacity: 0;
+}
+
+.active #bar3 {
+	transform: translateY(-14px) rotate(-45deg);
+}
+
+#menu a {
+	text-decoration: none;
+	color: white;
+	margin-left: 20vw;
+	font-size: 35px;
+	font-weight: bold;
+}
+
 #hero {
 	position: absolute;
 	top: 0;
@@ -207,10 +242,6 @@ html {
 	transform: translateY(1px);
 }
 
-.more {
-	display: none;
-}
-
 #title-small {
 	margin-top: 100px;
 	margin-left: 5vw;
@@ -261,12 +292,17 @@ html {
 
 /* Mobile___________________________________ */
 @media only screen and (max-width: 768px) {
+  .d {
+		display: none;
+	}
+
   #navbar {
 		padding-top: 7px;
 	}
 
 	#burger-ph {
 		margin-left: 25px;
+		margin-top: 30px;
 	}
 	
 	.bar {
@@ -276,9 +312,228 @@ html {
 		transition-duration: 300ms;
 		margin-bottom: 7px;
 	}
+
+	.more {
+		display: none;
+	}
 }
 
 /* Desktop___________________________________ */
 @media only screen and (min-width: 768px) {
+  .m {
+		display: none;
+	}
+
+	#border1 {
+		width: 100vw;
+		height: 30px;
+		background-color: #030303;
+		overflow: hidden;
+		z-index: 3;
+		display: flex;
+		/* align-items: center; */
+		justify-content: flex-end;
+	}
+
+  .border1-text {
+		text-decoration: none;
+		color: white;
+		margin-right: 15px;
+	}
+
+	.log {
+		margin-right: 15vw;
+	}
+
+	.b1-img {
+		height: 80%;
+		margin-right: 20px;
+	}
+
+  #nav-d {
+		width: 100vw;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		padding: 0 15vw;
+		background-color: white;
+	}
+
+	#nav-d-logo {
+		height: 80px;
+		margin-right: 30vw;
+	}
+
+	#nav-d-text-ph {
+		right: 0;
+	}
+
+	.nav-d-text {
+		text-decoration: none;
+    margin-left: 40px;
+	}
+
+  #hero {
+		margin-top: 100px;
+		/* overflow: hidden; */
+	}
+
+  #title-small {
+    margin-left: 15vw;
+		font-size: 50px;
+		font-weight: 600;
+	}
+
+	#title {
+		margin-left: 15vw;
+		font-size: 80px;
+		line-height: 80px;
+		font-weight: bold;
+		height: fit-content;
+		z-index: 4;
+	}
+
+	#intro {
+		margin-left: 15vw;
+		width: 40vw;
+	}
+
+	#date {
+		margin-left: 15vw;
+		font-size: 40px;
+		margin-top: 30px;
+	}
 	
+  #address {
+		margin-left: 15vw;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	#program-sec {
+		top: 850px;
+	}
+
+	#program-sec-title {
+		margin-top: 60px;
+	}
+
+	#program-line {
+		background-color: #ec5242;
+		height: 2px;
+		margin-bottom: 50px;
+	}
+
+	#p-div {
+    display: flex;
+	  flex-direction: row;
+	}
+
+	.program {
+		overflow: hidden;
+		width: 13vw;
+		margin: 0 6px 0 0;
+		flex-direction: column;
+		padding: 20px 13px 30px 13px;
+	}
+
+	.m {
+		display: none;
+	}
+
+	.program-desc {
+		text-align: center;
+	}
+
+	#see-p {
+    color: white;
+		margin: 50px 0 70px 0;
+	}
+
+	#speaker-sec {
+		top: 1400px;
+		border: none;
+		padding-bottom: 80px;
+	}
+
+  #speaker-hr {
+		height: 2px;
+		background-color: #ec5242;
+	}
+
+  #speaker-div {
+		display: flex;
+		width: 70vw;
+		flex-wrap: wrap;
+	}
+
+  .speaker {
+		width: 25vw;
+	}
+
+	#morebtn {
+		display: none;
+	}
+
+	#partner-sec {
+		position: absolute;
+		top: 2250px;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #272a31;
+	}
+	
+	#partner-sec-title {
+		color: white;
+		size: 24px;
+		font-weight: bold;
+		margin-top: 35px;
+		font-size: 30px;
+	}
+	
+	#partner-sec-hr {
+		width: 10vw;
+		height: 2px;
+		background-color: #ec5242;
+		margin-top: 25px;
+	}
+	
+	#partners {
+		width: 100vw;
+		margin: 50px 20vw 70px 20vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	
+	.partner-logo {
+		width: 15vw;
+		margin-right: 30px;
+		margin-bottom: 10px;
+	}
+	
+  #d-foot {
+		position: absolute;
+		top: 2670px;
+		width: 100vw;
+		height: 400px;
+		overflow: hidden;
+		display: flex;
+		padding: 0 10vw 0 10vw;
+		align-items: center;
+	}
+
+  #d-foot-img {
+		width: 200px;
+		height: 200px;
+		margin-right: 10vw;
+	}
+
+  #d-foot-p1 {
+		margin-bottom: 30px;
+	}
+
 }

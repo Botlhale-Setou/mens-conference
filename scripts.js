@@ -4,6 +4,10 @@ const sp3 = document.querySelector('#sp3');
 const sp4 = document.querySelector('#sp4');
 const sp5 = document.querySelector('#sp5');
 const sp6 = document.querySelector('#sp6');
+const burger = document.querySelector('#burger-ph');
+const menu = document.querySelector('menu');
+
+let active = false;
 
 const dataMod = {
   name: ['Vusi Thembekwayo', 'Dan Pena', 'Patrice Motsepe', 'Robert Greene', 'Mike Tyson', 'Jordan Peterson'],
@@ -17,6 +21,7 @@ const dataMod = {
 speakersSec.innerHTML = `
 <h4 class="" id="speaker-sec-title">Featured Speakers</h4>
 <hr id="speaker-hr">
+<div id="speaker-div">
 <article class="speaker" id="sp1">
   <img src="${dataMod.image[0]}" alt="${dataMod.name[0]}" class="speaker-img">
   <div class="speaker-info">
@@ -71,12 +76,25 @@ speakersSec.innerHTML = `
     <p class="speaker-desc">${dataMod.desc[0]}</p>
   </div>
 </article>
-<button class="" id="morebtn" type="button">
+</div>
+<button class="m" id="morebtn" type="button">
     MORE
-    <img src="./artwork/icons/uparrow.png" alt="Up arrow" class="updown" id="up">
-    <img src="./artwork/icons/downarrow.jpg" alt="Up arrow" class="updown" id="down">
+    <img src="./artwork/icons/uparrow.png" alt="Up arrow" class="updown m" id="up">
+    <img src="./artwork/icons/downarrow.jpg" alt="Up arrow" class="updown m" id="down">
 </button>
 `;
+
+burger.addEventListener('click', () => {
+  if (active === false) {
+    active = true;
+    menu.style.left = 0;
+    burger.classList.toggle('active');
+  } else {
+    active = false;
+    menu.style.left = '-100vw';
+    burger.classList.toggle('active');
+  }
+});
 
 btnMore.addEventListener('click', () => {
   sp3.classList.toggle('more');

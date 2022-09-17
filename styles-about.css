@@ -76,7 +76,7 @@ html {
 
 #logo-sec {
 	position: absolute;
-	top: 480px;
+	top: 570px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -112,7 +112,7 @@ html {
 
 #history-sec {
 	position: absolute;
-	top: 820px;
+	top: 890px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -390,6 +390,7 @@ html {
   #a-foot {
 		background-color: #272a31;
 		height: 350px;
+		color: white;
 	}
 
 	#a-foot-desc {

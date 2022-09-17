@@ -224,6 +224,10 @@ html {
 
 /* Mobile___________________________________ */
 @media only screen and (max-width: 768px) {
+	.d {
+		display: none;
+	}
+
   #navbar {
 		padding-top: 7px;
 	}
@@ -238,5 +242,92 @@ html {
 		background-color: var(--color-primary);
 		transition-duration: 300ms;
 		margin-bottom: 7px;
+	}
+}
+
+/* Desktop___________________________________ */
+@media only screen and (min-width:768px) {
+	.m {
+		display: none;
+	}
+
+	#border1 {
+		width: 100vw;
+		height: 30px;
+		background-color: #030303;
+		overflow: hidden;
+		z-index: 3;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		position: absolute;
+		top: 0;
+	}
+
+  .border1-text {
+		text-decoration: none;
+		color: white;
+		margin-right: 15px;
+	}
+
+	.log {
+		margin-right: 15vw;
+	}
+
+	.b1-img {
+		height: 80%;
+		margin-right: 20px;
+	}
+
+  #nav-d {
+		width: 100vw;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		padding: 0 15vw;
+		background-color: white;
+		position: absolute;
+		top: 30px;
+	}
+
+	#nav-d-logo {
+		height: 80px;
+		margin-right: 30vw;
+	}
+
+	#nav-d-text-ph {
+		right: 0;
+	}
+
+	.nav-d-text {
+		text-decoration: none;
+    margin-left: 40px;
+	}
+
+	#hero {
+		width: 100vw;
+		top: 113px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#title {
+		margin-top: 100px;
+		font-weight: bold;
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+  #hero-hr {
+		width: 5vw;
+		height: 2px;
+		background-color: #ec5242;
+		transform: translateX(37px);
+		margin: 30px 0 30px 0;
+	}
+
+	#intro {
+
 	}
 }

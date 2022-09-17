@@ -63,6 +63,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgements
 - A special **thank you** to all those who helped shape the version we're on!
+- This design template is by [Cindy Shin](https://www.behance.net/adagio07)
 
 ## 📝 License
 - Currently unlicensed.

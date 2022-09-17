@@ -5,7 +5,7 @@ const sp4 = document.querySelector('#sp4');
 const sp5 = document.querySelector('#sp5');
 const sp6 = document.querySelector('#sp6');
 const burger = document.querySelector('#burger-ph');
-const menu = document.querySelector('menu');
+const menu = document.querySelector('#menu');
 
 let active = false;
 

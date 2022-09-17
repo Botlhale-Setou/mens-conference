@@ -9,16 +9,18 @@ The official (not really) site for the 2023 Men's Conference held in Madikwe Gam
 - VS Code
 
 # Live Demo
-[Click here](https://botlhale-setou.github.io/) to view live demo.
+[Click here](https://botlhale-setou.github.io/mens-conference/index.html) to view live demo.
 
 # Getting Started
-This is a basic software developer portfolio (continuously under construction).
-It showcases the author's understanding of Flexbox, Semantic HTML, :hover, Git & GitHub, etc.
+This is a mock website for a "men only" conference. <br>
+My first capstone project @ Microverse. <br>
+It showcases the author's functional understanding of basic HTML, CSS and JS colaborative intergration.
 
 - **PLEASE COMMIT CHANGES TO NEW BRANCH & SUBMIT PR BEFORE MERGING.** 
 - **PLEASE MAKE NO CHANGES TO "git config"**
 
 ## Prerequisites
+- Javascript
 - GitHub Account
 - Git Bash (or other Terminal)
 - VS Code (or other IDE/Text-Editor)

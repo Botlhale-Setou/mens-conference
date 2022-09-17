@@ -6,6 +6,7 @@ const sp5 = document.querySelector('#sp5');
 const sp6 = document.querySelector('#sp6');
 const burger = document.querySelector('#burger-ph');
 const menu = document.querySelector('#menu');
+const logo = document.querySelector('#nav-d-logo');
 
 let active = false;
 

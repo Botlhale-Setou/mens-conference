@@ -328,6 +328,72 @@ html {
 	}
 
 	#intro {
-
+    width: 60vw;
+	  text-align: center;
+		padding: 25px 50px 25px 50px;
 	}
+
+  #date {
+		font-size: 16px;
+		margin-bottom: 10px;
+		margin-top: 40px;
+	}
+
+	#address {
+		margin-bottom: 50px;
+	}
+
+  #logo-sec {
+		top: 700px;
+	}
+
+	#logo-sec-title {
+		font-size: 25px;
+	}
+
+	#logo-sec-desc2 {
+    text-align: center;
+		width: 50vw;
+	}
+
+	#logo-sec-img {
+		height: 200px;
+		margin-bottom: 40px;
+	}
+
+  #history-sec {
+		top: 1250px;
+		border-top: 1px solid rgb(0,0,0,0.3);
+	}
+
+	#history-sec-title {
+		margin-top: 40px;
+		font-size: 30px;
+	}
+
+	.history {
+		width: 30vw;
+		margin: 35px 20px 45px 20px;
+	}
+
+	#history-ph {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 70vw;
+	}
+
+  #partner-sec {
+		display: none;
+	}
+
+  #a-foot {
+		background-color: #272a31;
+		height: 350px;
+	}
+
+	#a-foot-desc {
+    margin-bottom: 13px;
+	}
+
 }
